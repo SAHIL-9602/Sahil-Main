@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Jangir Digital Store</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #288995;
+            padding: 25px 10%;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            font-weight: bold;
+        }
+
+        /* Navbar */
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 0;
+            display: block;
+            transition: 0.3s;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Product Icon */
+        .product-top {
+            text-align: center;
+            padding: 30px 10%;
+        }
+
+        .product-icon {
+            width: 150px;
+            height: 150px;
+            background: #ddd;
+            border-radius: 20px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .product-icon:hover {
+            background: #ccc;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 10%;
+            background: white;
+            margin: 40px auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .row {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .row img {
+            width: 45%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .text-box {
+            width: 48%;
+        }
+
+        .text-box h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .text-box p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .icons {
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 25px 10%;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media(max-width: 800px) {
+            .row img, .text-box { width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Sahil Jangir Digital Store</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+            <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="terms.html" target="_blank">Terms & Conditions</a></li>
+            <li><a href="refund.html" target="_blank">Refund Policy</a></li>
+            <li><a href="delivery.html" target="_blank">Delivery Policy</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Icon -->
+    <div class="product-top">
+        <a href="product.html">
+            <div class="product-icon">📦</div>
+        </a>
+        <p style="margin-top: 15px; font-size: 1.1rem; color:#333;">Click the icon to view all products</p>
+    </div>
+
+    <!-- Section 1 -->
+    <section class="section">
+        <div class="row">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Ebook Image">
+            <div class="text-box">
+                <h2>Premium E-Books for Every Reader</h2>
+                <p>Hamare digital store par aapko **hundreds of high-quality ebooks** milengi — business, motivation, skills, productivity, earning, mindset aur bahut zyada categories.</p>
+                <p>Jo log growth chahte hai unke liye hamari ebooks ek perfect investment hai.</p>
+                <div class="icons">⭐ Premium Quality   ⭐ Instant Download   ⭐ Lifetime Access</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section">
+        <div class="row">
+            <div class="text-box">
+                <h2>Why Our Digital Store is Trusted?</h2>
+                <p>Har book ka full review, rating, aur feedback system available hoga jisse users ko 100% clarity milegi ki wo kya purchase kar rahe hain.</p>
+                <p>Hamari delivery system 100% **automatic** hai jisse customer ko turant unka product mil jata hai.</p>
+                <div class="icons">✔ Verified Content   ✔ Secure Payment   ✔ Auto Delivery</div>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29" alt="Digital Store">
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="section">
+        <div class="row">
+            <img src="https://i.ibb.co/kCPHmt1/file-00000000bba87206a6ff2e11eac11b6a.png" alt="file-00000000bba87206a6ff2e11eac11b6a" border="0" alt="Reviews Image">
+
+            <div class="text-box">
+                <h2>Customer Reviews & Real Results</h2>
+                <p>Hamare store ke thousands of customers apne experience ke through batate hain ki unhe hamari ebooks se actual growth mili hai.</p>
+                <p>Reading se mindset, earning, skill learning aur productivity sab improve hoti hai — aur isi wajah se hamari store ki demand high hai.</p>
+                <div class="icons">❤️ 4.9/5 Average Rating   ❤️ Trusted by Readers</div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section">
+        <div class="row">
+            <div class="text-box">
+                <h2>Explore Hundreds of Digital Products</h2>
+                <p>Books, courses, templates, guides, productivity tools — sab ek hi jagah par available.  
+                Aap jo bhi chaho digital format me instantly download kar sakte ho.</p>
+                <p>Hamari website easy-to-use, fast aur safe hai.</p>
+                <div class="icons">💡 Productivity Tools   💡 Money-Making Guides   💡 Skill Development Books</div>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c" alt="Tools">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Sahil Jangir Digital Store — All Rights Reserved.
+    </footer>
+</body>
+</html>

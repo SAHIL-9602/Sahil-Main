@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Sahil Jangir Digital Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #288995;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 30px 10% 10px 10%;
+            color: #222;
+            border-left: 5px solid #222;
+            padding-left: 10px;
+        }
+
+        .product-container {
+            margin: 10px 10% 40px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #FEFEF0;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .product-card p {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e60023;
+            margin-bottom: 15px;
+        }
+
+        .btn-order {
+            background: green;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .btn-order:hover {
+            opacity: 0.85;
+        }
+
+        @media(max-width: 800px){
+            .title {
+                margin: 20px 5%;
+            }
+            .product-container {
+                margin: 20px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>Sahil Jangir Digital Store</header>
+
+<div class="title">PRODUCTS</div>
+
+<div class="product-container">
+
+    <!-- 🔹 PRODUCT 1 -->
+    <div class="product-card">
+        <img src="https://i.ibb.co/LDc3JXrB/file-00000000ccbc720881bbe076270ece3a.png" alt="file 00000000ccbc720881bbe076270ece3a" border="0">
+        <h3>Money Mindset Map Ebook</h3>
+        <p>High-quality digital ebook. Instantly downloadable after payment.</p>
+
+        <a class="btn-order" href="order1.html">Order Now</a>
+
+        <div class="price">₹299</div>
+    </div>
+
+    <!-- 🔹 PRODUCT 2 -->
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d" alt="Ebook Image">
+        <h3>Motivation Ebook</h3>
+        <p>Improve your mindset, productivity and focus with this ebook.</p>
+
+        <a class="btn-order" href="order2.html">Order Now</a>
+
+        <div class="price">₹249</div>
+    </div>
+
+    <!-- 🔹 PRODUCT 3 -->
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93" alt="Ebook Image">
+        <h3>Business Guide Ebook</h3>
+        <p>A full guide for beginners to start earning online.</p>
+
+        <a class="btn-order" href="order3.html">Order Now</a>
+
+        <div class="price">₹299</div>
+    </div>
+
+</div>
+
+</body>
+</html>

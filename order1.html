@@ -13,14 +13,24 @@
             padding: 0;
         }
 
+        /* UPDATED BANNER */
         .header {
-            background: #288995;
-            height: 50px;
-            padding: 20px;
+            background: linear-gradient(90deg, #1f7a8c, #288995);
+            padding: 25px 15px;
             text-align: center;
             color: white;
+        }
+
+        .header h1 {
+            margin: 0;
             font-size: 34px;
             font-weight: bold;
+        }
+
+        .header p {
+            margin: 6px 0 0;
+            font-size: 15px;
+            opacity: 0.9;
         }
 
         .container {
@@ -54,9 +64,14 @@
             color: #333;
         }
 
-        .description p {
-            line-height: 1.6;
+        .description ul {
+            padding-left: 18px;
             color: #555;
+            line-height: 1.7;
+        }
+
+        .description ul li {
+            margin-bottom: 6px;
         }
 
         .details-box {
@@ -72,50 +87,33 @@
             font-size: 16px;
         }
 
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        input {
-            width: 100%;
-            padding: 12px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-        }
-
         .price-box {
             margin-top: 20px;
             padding: 15px;
-            font-size: 20px;
+            font-size: 22px;
             background: #fff3f3;
             border-radius: 10px;
             border: 1px solid #e4b4b4;
             color: #b80000;
             font-weight: bold;
+            text-align: center;
         }
 
         .pay-btn {
             display: block;
             width: 100%;
-            padding: 15px;
+            padding: 16px;
             margin-top: 25px;
-            background: #e63946;
+            background: #c62828;
             color: white;
             border: none;
             border-radius: 10px;
-            font-size: 18px;
-            cursor: not-allowed;
-            opacity: 0.6;
+            font-size: 20px;
+            cursor: pointer;
         }
 
-        .pay-btn.active {
-            cursor: pointer;
-            opacity: 1;
-            background: #c62828;
+        .pay-btn:hover {
+            background: #a81f1f;
         }
 
         @media(max-width: 600px) {
@@ -124,127 +122,55 @@
             }
             .book-section img {
                 width: 200px;
+                margin: auto;
             }
         }
     </style>
 </head>
 <body>
 
-    <div class="header">Sahil Jangir Digital Store</div>
+    <!-- UPDATED HEADER -->
+    <div class="header">
+        <h1>Sahil Jangir Digital Store</h1>
+    </div>
 
     <div class="container">
 
         <div class="book-section">
-            <img src="https://i.ibb.co/ymKB4rwG/file-00000000ccbc720881bbe076270ece3a.png" alt="file 00000000ccbc720881bbe076270ece3a" border="0" alt="Money Mindset Map Book">
+            <img src="https://i.ibb.co/Z6m4xCvL/file-00000000ccbc720881bbe076270ece3.jpg" alt="Money Mindset Map Ebook">
 
             <div class="description">
                 <h2>Money Mindset Map (Digital Ebook)</h2>
-                <p>
-                    Yeh book aapki financial thinking ko powerful banati hai —  
-                    mindset, habits, money flow, discipline aur strategy ka perfect combination.          
-                   ★ Sikhiye growth mindset paise aur wealth ke liye
 
-                   ★ Apni limiting beliefs ko todhiye
-
-★ Banaiye clear financial goals
-
-★ Follow kariye practical strategies wealth build karne ke liye
-
-★ Adopt kariye successful logon ke habits
-
-★ Step-by-step plan for earning, saving, investing
-
-★ Develop kariye confidence aur financial discipline
-
-★ Focus kariye long-term vision for financial success
-
-★ Perfect hai beginners ke liye jo apni wealth journey start kar rahe hain
-
-★ Easy-to-follow guide for actionable results
-                    Digital format me instant email delivery ke saath.
-                </p>
+                <ul>
+                    <li>Powerful money mindset develop karna sikhiye</li>
+                    <li>Limiting beliefs ko todkar growth thinking banaiye</li>
+                    <li>Clear financial goals set karna sikhiye</li>
+                    <li>Practical strategies for earning, saving & investing</li>
+                    <li>Successful logon ki habits adopt kariye</li>
+                    <li>Step-by-step wealth building roadmap</li>
+                    <li>Confidence aur financial discipline develop kariye</li>
+                    <li>Long-term financial vision create kariye</li>
+                    <li>Beginners ke liye perfect wealth starter guide</li>
+                    <li>Easy-to-follow & actionable results focused ebook</li>
+                    <li>Instant digital delivery via email (PDF format)</li>
+                </ul>
             </div>
         </div>
 
         <div class="details-box">
             <p><b>Type:</b> Digital Ebook (PDF)</p>
             <p><b>Price:</b> ₹299</p>
-            <p><b>Written By:</b> Sahil Jangir</p>
+            <p><b>Author:</b> Sahil Jangir</p>
             <p><b>Delivery:</b> Instant Email Delivery</p>
         </div>
 
-        <!-- FORM -->
-        <label>Your Name</label>
-        <input id="name" type="text" placeholder="Enter your name">
 
-        <label>Email Address (Ebook yahi milegi)</label>
-        <input id="email" type="email" placeholder="Enter your email">
-
-        <label>Phone Number</label>
-        <input id="phone" type="text" placeholder="Enter phone number">
-
-        <label>Quantity</label>
-        <input id="qty" type="number" value="1" min="1">
-
-        <label>Coupon Code</label>
-        <input id="coupon" type="text" placeholder="Enter coupon (optional)">
-
-        <div class="price-box" id="priceBox">
-            Total Price: ₹299
-        </div>
-
-        <button id="payBtn" class="pay-btn">Pay Now</button>
+        <button class="pay-btn" onclick="window.location.href='https://payments.cashfree.com/forms?code=Sahil111'">
+            Pay Now
+        </button>
 
     </div>
 
-    <script>
-        const priceBox = document.getElementById("priceBox");
-        const qtyInput = document.getElementById("qty");
-        const couponInput = document.getElementById("coupon");
-        const payBtn = document.getElementById("payBtn");
-
-        function updatePrice() {
-            let qty = Number(qtyInput.value);
-            let pricePerBook = 299;
-
-            if (couponInput.value.trim().toUpperCase() === "MMM50") {
-                pricePerBook = 249; 
-            }
-
-            let total = qty * pricePerBook;
-            priceBox.innerHTML = "Total Price: ₹" + total;
-        }
-
-        qtyInput.addEventListener("input", updatePrice);
-        couponInput.addEventListener("input", updatePrice);
-
-        function checkForm() {
-            const name = document.getElementById("name").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const phone = document.getElementById("phone").value.trim();
-            const qty = qtyInput.value;
-
-            if (name && email && phone && qty > 0) {
-                payBtn.classList.add("active");
-                payBtn.disabled = false;
-                payBtn.style.cursor = "pointer";
-            } else {
-                payBtn.classList.remove("active");
-                payBtn.disabled = true;
-            }
-        }
-
-        document.querySelectorAll("input").forEach(input => {
-            input.addEventListener("input", checkForm);
-        });
-
-        // Pay button link — YOU WILL ADD YOUR RAZORPAY LINK BELOW
-        payBtn.onclick = function() {
-            if (payBtn.classList.contains("active")) {
-                window.location.href = "pay.html";
-            }
-        };
-    </script>
-
 </body>
-</html>
+    </html>
